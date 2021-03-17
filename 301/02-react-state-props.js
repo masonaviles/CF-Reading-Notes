@@ -29,6 +29,8 @@ class Counter extends React.Component {
 //   }
 // }
 
+// when you pass state properties from the parent to the child, the child accesses it via props while the parent uses this.state
+
 class Counter extends React.Component {
   state = {
     score: 0
@@ -499,3 +501,20 @@ ReactDOM.render(
 // -----------------------------
 // React: bootstrap
 // -----------------------------
+
+
+
+// -----------------------------
+// Class Notes
+// -----------------------------
+
+// map functions and arrays
+
+const arr = [4, 5, 3, 5, 24, 5];
+
+// these are the same
+const newArr1 = arr.map(x => Math.pow(x,2));
+
+const newArr2 = arr.map(x => {
+  return Math.pow(x,2);
+})
